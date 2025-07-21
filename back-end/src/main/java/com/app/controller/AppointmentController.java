@@ -87,7 +87,7 @@ public class AppointmentController {
 	@GetMapping("/bookAppointment/{doctorId}/{patientId}/{time}")
 	public List<LocalDateTime> bookAppointmentForPatient(@PathVariable Long doctorId, @PathVariable Long patientId,
 			@PathVariable String time) {
-		emailSenderService.sendEmailOnAppointmentBooking(patientId,time);
+		emailSenderService.sendEmailOnAppointmentBooking(patientId, doctorId, time);
 		return appointmentService.bookAppointmentForPatient(doctorId, patientId, time);
 	}
 

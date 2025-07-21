@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import UserLoginAPI from '../service/UserLoginAPI';
-import ReactModuleLoader from 'react-module-loader';
+//import ReactModuleLoader from 'react-module-loader';
 
 class EmailForForgotPassword extends Component {
     constructor(props) {
